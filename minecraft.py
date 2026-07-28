@@ -35,7 +35,7 @@ def main() -> None:
     parser.add_argument(
         "action",
         type=str,
-        choices=["generate"],
+        choices=["generate", "decompile"],
         help="Action that should be performed."
     )
     args = parser.parse_args()
@@ -57,6 +57,17 @@ def main() -> None:
         case "generate":
             exec_command_parts.append("net.minecraft.client.data.Main")
             exec_command_parts.append("--all")
+            print("Will execute Minecraft client's Data Generators.")
+        case "decompile":
+            # While using Vineflower, we don't need Minecraft's JVM arguments.
+            exec_command_parts = [
+                "java",
+                "-jar", "third-party/vineflower-1.12.0.jar",
+                "--folder",
+                "client.jar",
+                "decompiled/"
+            ]
+            print("Will decompile Minecraft client JAR using Vineflower.")
         case _:
             print(f"Unknown action: {args.action}")
             return

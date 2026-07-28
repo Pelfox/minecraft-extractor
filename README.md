@@ -16,6 +16,9 @@ Then, you can run `minecraft.py` which will build the classpath and execute the
 selected action against the client JAR through installed Java. You can run
 `python minecraft.py --help` for more information.
 
+You can also perform decompilation of the client JAR using `decompile` action
+through `minecraft.py` script.
+
 ## Third-Party Rights
 
 **THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT. IT IS NOT APPROVED BY, ENDORSED

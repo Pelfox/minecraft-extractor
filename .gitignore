@@ -295,6 +295,10 @@ $RECYCLE.BIN/
 
 # Downloaded / generated Minecraft files.
 assets/
-generated/
 libraries/
+generated/
 logs/
+decompiled/
+
+# Preserve Vineflower JAR.
+!vineflower-*.jar
