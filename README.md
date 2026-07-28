@@ -16,7 +16,7 @@ Then, you can run `minecraft.py` which will build the classpath and execute the
 selected action against the client JAR through installed Java. You can run
 `python minecraft.py --help` for more information.
 
-# Third-Party Rights
+## Third-Party Rights
 
 **THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT. IT IS NOT APPROVED BY, ENDORSED
 BY, ASSOCIATED WITH, OR SUPPORTED BY MOJANG OR MICROSOFT.**
